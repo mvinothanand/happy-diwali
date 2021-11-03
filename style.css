@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+  /* background: url("https://unsplash.com/photos/PAykYb-8Er8"), linear-gradient(0deg, blue 0%, indigo 100%); */
+  background-image: url("https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80");
+  font-family: "Comfortaa", cursive;
+  font-family: "Nunito", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+h1 {
+  /* letter-spacing: 3rem; */
+  animation-name: space-letters;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: linear;
+  background: linear-gradient(
+    65deg,
+    whitesmoke 0%,
+    rgb(236, 49, 49) 50%,
+    white 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes space-letters {
+  0% {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  25% {
+    letter-spacing: 1.25rem;
+  }
+  50% {
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+    background: linear-gradient(
+      65deg,
+      rgb(236, 49, 49) 0%,
+      white 50%,
+      rgb(236, 49, 49) 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  75% {
+    letter-spacing: 1.75rem;
+  }
+
+  100% {
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    /* color: brown; */
+  }
+}
